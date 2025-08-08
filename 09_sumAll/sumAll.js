@@ -1,6 +1,10 @@
-const sumAll = function() {
-
+const sumAll = function(fn,ln) {
+    
+    let sum  =0;
+    while (fn <= ln) {
+        sum += fn;
+        fn++;
+    }
+    return sum;
 };
-
-// Do not edit below this line
-module.exports = sumAll;
+console.log(sumAll(1,7));
