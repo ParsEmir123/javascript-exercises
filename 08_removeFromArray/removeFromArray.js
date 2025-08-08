@@ -1,5 +1,5 @@
-const removeFromArray = function() {
+const removeFromArray = function(arr,...args) {
+    array = arr.filter((item) => item !== args[args.indexOf(item)]);
+    return array;
 };
-
-// Do not edit below this line
-module.exports = removeFromArray;
+console.log(removeFromArray(["hey", 2, 3, "ho"], "hey", 3))
